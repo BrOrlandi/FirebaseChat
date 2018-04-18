@@ -1,0 +1,35 @@
+{
+  "name": "firebase-chat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Firebase Chat",
+  "author": "Bruno Orlandi <brorlandi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && parcel build ./src/index.html --no-cache",
+    "start": "parcel ./src/index.html --no-cache --no-hmr -p 3000",
+    "deploy": "yarn build && firebase deploy"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "node-sass": "^4.8.3",
+    "parcel-bundler": "^1.7.1"
+  },
+  "dependencies": {
+    "bulma": "^0.7.0",
+    "firebase": "^4.12.1",
+    "re-base": "^3.2.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
