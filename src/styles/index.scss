@@ -1,0 +1,25 @@
+@import './custom_bulma';
+
+html,
+body {
+  background-color: $bg-color;
+  overflow-y: auto;
+}
+
+.navbar {
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.center-text {
+ text-align: center;
+}

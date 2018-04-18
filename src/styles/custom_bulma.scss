@@ -1,0 +1,18 @@
+// 1. Import the initial variables
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+
+$dark-blue:  #164c71;
+$black: #000;
+
+$light-blue: #0294BD;
+$yellow: #ffc70f;
+
+$bg-color:  #152335;
+
+$primary: $dark-blue;
+$navbar-dropdown-boxed-shadow: 0;
+
+$family-sans-serif: 'Lato', sans-serif;
+// 6. Import the rest of Bulma
+@import "bulma/bulma";
