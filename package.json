@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && parcel build ./src/index.html --no-cache",
-    "start": "parcel ./src/index.html --no-cache --no-hmr -p 3000",
+    "start": "parcel ./src/index.html -p 3000",
     "deploy": "yarn build && firebase deploy"
   },
   "devDependencies": {
