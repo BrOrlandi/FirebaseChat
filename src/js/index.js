@@ -11,5 +11,9 @@ const renderApp = (user) => {
 };
 
 auth.onAuthStateChanged((user) => {
+  if (user) {
+    console.log('Authenticated with', user.displayName);
+  }
+
   renderApp(user);
 });

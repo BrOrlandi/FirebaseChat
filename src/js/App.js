@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import NavBar from './NavBar';
-import Chat from './Chat';
+import ChatContainer from './ChatContainer';
+import Signup from './Signup';
 
 class App extends Component {
   render() {
+    const { user } = this.props;
 
     return (
       <div>
         <NavBar />
-        {JSON.stringify(this.props.user)}
-        <Chat />
+        <section className="section">
+          <div className="container">
+            {!user && <Signup />}
+            {user && <ChatContainer />}
+          </div>
+        </section>
       </div>
     );
   }
