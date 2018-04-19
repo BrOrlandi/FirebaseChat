@@ -45,7 +45,6 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  // overflow-y:
 }
 
 .send-message {
@@ -107,6 +106,7 @@ body {
 
 .chat-box {
   flex: 1;
+  overflow-y: auto;
 }
 
 .box {
@@ -119,4 +119,33 @@ body {
 
 .logout-button {
   margin-right: 15px;
+}
+
+.chat-message {
+  display: flex;
+  margin-bottom: 10px;
+
+  .user-info__photo {
+    min-width: 48px;
+  }
+}
+
+.chat-message__content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message__user-name {
+  font-weight: bold;
+}
+
+.chat-message__message {
+  word-break: break-word;
+}
+
+.chat-message__timestamp {
+  color: grey;
+  font-size: .8em;
+  font-weight: normal;
 }

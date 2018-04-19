@@ -15,6 +15,7 @@ class SendMessage extends Component {
 
     const messageData = {
       message,
+      userId: user.uid,
       userName: user.displayName,
       userPhoto: user.photoURL,
       timestamp: firebase.database.ServerValue.TIMESTAMP,
