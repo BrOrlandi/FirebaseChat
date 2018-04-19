@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
 class Chat extends Component {
+
+  _renderMessages = () => {
+    return "blaaaa";
+  }
+
   render() {
     return (
       <div className="chat-box box">
-        Bla
+        {this._renderMessages()}
       </div>
     );
   }

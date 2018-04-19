@@ -18,7 +18,7 @@ class UserInfo extends Component {
           </figure>
           <h1 className="subtitle">{user.displayName}</h1>
         </div>
-        <button onClick={this._handleSignout} className="button is-danger">Logout</button>
+        <button onClick={this._handleSignout} className="logout-button button is-danger">Logout</button>
       </div>
     );
   }

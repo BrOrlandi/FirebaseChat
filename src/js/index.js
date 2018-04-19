@@ -10,10 +10,12 @@ const renderApp = (user) => {
   ReactDOM.render(<App user={user} />, document.getElementById('app'));
 };
 
-auth.onAuthStateChanged((user) => {
+const handleAuthStateChanged = (user) => {
   if (user) {
     console.log('Authenticated with', user.displayName);
   }
 
   renderApp(user);
-});
+};
+
+auth.onAuthStateChanged(handleAuthStateChanged);
