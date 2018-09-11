@@ -13,7 +13,7 @@ class Chat extends Component {
 
     this.chatMessages = React.createRef();
 
-    rebase.bindToState('/messages', {
+    rebase.bindToState('/cpsfrontend-messages', {
       context: this,
       state: 'messages',
       asArray: true,

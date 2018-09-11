@@ -21,7 +21,7 @@ class SendMessage extends Component {
       timestamp: firebase.database.ServerValue.TIMESTAMP,
     };
 
-    rebase.push('/messages', { data: messageData });
+    rebase.push('/cpsfrontend-messages', { data: messageData });
 
     this.message.current.value = '';
   }
