@@ -6,8 +6,8 @@
   "author": "Bruno Orlandi <brorlandi@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./dist && parcel build ./src/index.html --no-cache",
-    "start": "rm -rf ./dist && parcel ./src/index.html --no-cache -p 3000",
+    "build": "rm -rf ./public && parcel build ./src/index.html --no-cache -d public",
+    "start": "rm -rf ./public && parcel ./src/index.html --no-cache -p 3000 -d public",
     "deploy": "yarn build && firebase deploy"
   },
   "devDependencies": {

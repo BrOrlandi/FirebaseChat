@@ -1,5 +1,5 @@
 .cache/
-dist/
+public/
 node_modules/
 *.log
 .firebaserc
